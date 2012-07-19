@@ -1,1 +1,16 @@
 this is scaffolding only.
+
+Scenario 1 (Initial State):
+	Given I have loaded the dojo page,
+	It should have four (4) buttons, which are available to click.
+	And it should have no chart.
+
+Scenario 2 (Clear All Click):
+
+Scenario 3 (Load dataset One):
+
+Scenario 4 (Load dataset Two):
+
+Scenario 5 (Load dataset Three):
+
+Scenario 6 (Load dataset Four):

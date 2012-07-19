@@ -32,9 +32,13 @@ d3.json("bullets.json", function(data) {
       .text(function(d) { return d.subtitle; });
 
   chart.duration(1000);
-  window.transition = function() {
-    vis.datum(randomize).call(chart);
+  window.transition = function(whichDataSetId) {
+    vis.datum(randomize).call(chart);	
   };
+
+  window.clearAll = function() {
+  	chart.clear();
+  }
 });
 
 /// uses randomizer in different sequences, to return a random number(?) (ss i luv u~~) 
@@ -263,6 +267,10 @@ function bulletChart() {
     duration = x;
     return bullet;
   };
+
+  bullet.clear = function() {
+  	// let's have a clear-chart implementation here
+  }
 
   return bullet;
 };
